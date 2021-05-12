@@ -1,3 +1,19 @@
+## missmixalot extension development
+To play around with the missmixalot extension go to https://jenskragelund.github.io/scratch-gui/ or run it locally:
+
+```bash
+git clone --depth 1 https://github.com/jenskragelund/scratch-vm.git
+git clone --depth 1 https://github.com/jenskragelund/scratch-gui.git
+
+cd scratch-vm
+yarn install
+yarn link
+
+cd ../scratch-gui
+yarn link scratch-vm
+yarn install
+```
+
 # scratch-gui
 #### Scratch GUI is a set of React components that comprise the interface for creating and running Scratch 3.0 projects
 
